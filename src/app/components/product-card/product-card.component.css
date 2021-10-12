@@ -1,0 +1,10 @@
+.card-width {
+  width: 15rem;
+}
+.card-width:hover {
+  width: 18rem;
+}
+
+.card-footer {
+  padding: 0px;
+}
