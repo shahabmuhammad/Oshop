@@ -1,3 +1,4 @@
+
 <div *ngIf="product.title" class="card p-3 mb-5" [style.width]="cardWidth">
   <img [src]="product.imageUrl" class="card-img-top" style="height: 220px" />
   <div class="card-body">
@@ -8,5 +9,7 @@
     <button (click)="addToCart(product)" class="btn btn-primary card-btn col-12">
       Add to Cart
     </button>
+            <div>{{ getQuantity() }}</div>
+
   </div>
 </div>

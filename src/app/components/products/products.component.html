@@ -7,7 +7,7 @@
             <div class="row row-cols-auto">
                 <div *ngFor="let p of filterProducts" class="col-md-4">
                     <div class="col-md-6">
-                        <product-card [product]="p" [showBtn]="true" [cardWidth]="cardWidth"></product-card>
+                        <product-card [product]="p" [shopping-cart]="cart" [showBtn]="true" [cardWidth]="cardWidth"></product-card>
                     </div>
                 </div>
             </div>

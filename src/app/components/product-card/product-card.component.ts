@@ -12,10 +12,19 @@ export class ProductCardComponent implements OnInit {
   product!: Product;
   @Input('showBtn') showBtn: boolean = false;
   @Input('cardWidth') cardWidth: string = '';
+  @Input('shopping-cart') shoppingCart: any;
+
   constructor(private cartService: ShoppingCartService) {}
 
   addToCart(product: Product) {
     this.cartService.addToCart(product);
+  }
+
+  getQuantity() {
+    if (!this.shoppingCart) return 0;
+    let item = this.shoppingCart.items[this.product.$key as string];
+    console.log(this.shoppingCart);
+    return item ? item.quantity : 0;
   }
 
   ngOnInit(): void {}
