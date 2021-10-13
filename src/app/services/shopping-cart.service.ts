@@ -59,4 +59,19 @@ export class ShoppingCartService {
       '/shopping-carts/' + cartId + '/items/' + productId
     ) as any;
   }
+
+  async removeFromCart(product: Product) {
+    let cartId = localStorage.getItem('cartId');
+    if (cartId) {
+      let item$ = this.getItem(cartId, product.$key as string);
+      item$
+        .valueChanges()
+        .pipe(take(1))
+        .subscribe((item: any) => {
+          if (item.quantity != 0) {
+            item$.update({ quantity: item.quantity - 1 });
+          }
+        });
+    }
+  }
 }
