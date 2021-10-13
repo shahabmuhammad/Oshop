@@ -1,5 +1,11 @@
+.navbar{
+  background-color: #D1E8E4;
+}
 .dropdown-toggle {
   cursor: pointer;
+}
+.navbar-collapse{
+  justify-content: end;
 }
 .bd-placeholder-img {
   font-size: 1.125rem;
@@ -7,6 +13,11 @@
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
+}
+
+.navbar-brand{
+  font-size: xx-large;
+    font-weight: 900;
 }
 
 @media (min-width: 768px) {
