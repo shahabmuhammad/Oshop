@@ -1,5 +1,13 @@
+.card{
+}
+.card:hover{
+  border-color: #BCCC9A;
+  box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+-webkit-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+-moz-box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.3);
+}
 .card-width {
-  width: 15rem;
+  width: max-content;
 }
 .card-width:hover {
   width: 18rem;
@@ -7,4 +15,14 @@
 
 .card-footer {
   padding: 0px;
+  background-color: transparent;
+}
+.card-btn{
+  background-color: transparent;
+  color: #6D9886;
+  border-color: #6D9886;
+}
+.card-btn:hover{
+  background-color: #6D9886;
+  color: #fff;
 }
