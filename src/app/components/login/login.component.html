@@ -1,23 +1,55 @@
-<button type="button" class="nav-link btn login-btn" (click)="open(content)">Log in</button>
+<button type="button" class="nav-link btn login-btn" (click)="open(content)">
+  Log in
+</button>
 <!-- Modal -->
 <ng-template #content let-c="close" let-d="dismiss">
-    <div class="modal-header">
-        <h4 class="modal-title" id="modal-basic-title">Hi there!</h4>
-        <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-            <span aria-hidden="true">&times;</span>
-        </button>
+  <div class="modal-header pb-3 border-0">
+    <div class="mt-1">
+      <h4 class="modal-title" id="modal-basic-title">Welcome Back</h4>
+      <p class="muted-text mr-1">
+        Don’t have an Account? <a class="popup-link" href="">Signup Now</a>
+      </p>
     </div>
-    <div class="modal-body">
-        <p>Hello, World!</p>
-    </div>
-    <div class="modal-footer">
-        <button type="button" (click)="login()" class="btn btn-primary">
-            Login with Google
-        </button>
-    </div>
+    <button
+      type="button"
+      class="close"
+      aria-label="Close"
+      (click)="d('Cross click')"
+    >
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body pt-0 border-0">
+    <p class="login-note">
+      Existing users can use phone number & password to login
+    </p>
+    <form>
+      <div class="form-group">
+        <label for="phone-input">Phone</label>
+        <input
+          type="tel"
+          class="form-control"
+          id="phone-input"
+          aria-describedby="phoneHelp"
+          placeholder="0301-2345678"
+        />
+      </div>
+      <div class="form-group">
+        <label for="password-input">Password</label>
+        <input type="password" class="form-control" id="password-input" />
+      </div>
+      <div class="text-center mt-3">
+        <a class="forget-password" href="">forget password</a>
+      </div>
+      <button type="submit" class="btn login-btn btn-primary mt-3">
+        Login
+      </button>
+      <p class="muted-text text-center mb-0">or</p>
+      <button type="button" (click)="login()" class="btn login-btn btn-primary">
+        Login with Google
+      </button>
+    </form>
+  </div>
 </ng-template>
-
-
-
 
 <!-- <button (click)="login()" class="btn btn-primary">LogIn with Google</button> -->
