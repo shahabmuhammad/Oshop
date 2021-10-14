@@ -8,7 +8,11 @@ import { LoginComponent } from './components/login/login.component';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {
+  NgbModal,
+  NgbModalConfig,
+  NgbModule,
+} from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AuthService } from './services/auth.service';
@@ -48,6 +52,7 @@ import { ShoppingCartService } from './services/shopping-cart.service';
     NotFoundComponent,
     ProductFilterComponent,
     ProductCardComponent,
+    LoginComponent,
   ],
   imports: [
     AngularFireModule.initializeApp(environment.firebase),
@@ -114,6 +119,8 @@ import { ShoppingCartService } from './services/shopping-cart.service';
     CategoryService,
     ProductService,
     ShoppingCartService,
+    NgbModalConfig,
+    NgbModal,
   ],
   bootstrap: [AppComponent],
 })

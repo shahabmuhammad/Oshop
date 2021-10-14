@@ -20,11 +20,18 @@
     >
       <ul class="navbar-nav mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/shopping-cart">Shopping Cart</a>
+          <a class="nav-link" routerLink="/shopping-cart">Shopping Cart <span class="badge rounded-pill bg-success">{{ ShoppingCartItem }}</span>
+</a>
         </li>
         <ng-template #anonymousUser>
           <li class="nav-item">
-            <a class="nav-link" routerLink="/login">Log in</a>
+            <login></login>
+            <!-- <button type="button"  class="nav-link btn login-btn" (click)="open(content)">Log in</button> -->
+            <!-- <a  class="nav-link" routerLink="/login">Log in</a> -->
+            <!-- Button trigger modal -->
+            <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Launch static backdrop modal
+            </button> -->
           </li>
         </ng-template>
         <li
@@ -70,3 +77,5 @@
     </div>
   </div>
 </nav>
+
+

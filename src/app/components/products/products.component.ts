@@ -29,7 +29,7 @@ export class ProductsComponent implements OnInit, OnDestroy {
       .pipe(
         switchMap((products) => {
           this.products = products;
-          console.log(this.products);
+          //console.log(this.products);
           return this.route.queryParamMap;
         })
       )
