@@ -1,6 +1,53 @@
+a:hover {
+  transition: all .3s ease-in-out;
+}
 .login-btn {
   color: rgb(163, 218, 163);
 }
+.modal-header{
+  padding: 1.75rem 2.5rem 1.75rem 1.75rem;
+}
 .nav-link {
   color: #fff;
+}
+.muted-text{
+  color: #666;
+  font-size: 14px;
+}
+.popup-link{
+  color: #6d9886;
+}
+.close{
+  position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.modal-body{
+  padding: 1.75rem;
+}
+.login-note{
+  border: 1px solid #3985e6;
+    border-radius: .1875rem;
+    font-size: .75rem;
+    padding: .5rem .625rem;
+    text-align: center;
+    color: #3985e6;
+    background: rgba(57,133,230,.2);
+}
+label{
+  font-size: .8125rem;
+    color: #5f5f5f;
+}
+.forget-password{
+  font-size: .75rem;
+}
+.forget-password:hover{
+text-decoration: none;
+}
+.login-btn{
+  width: 100%;
+  background-color: #6d9886;
+  color: #fff;
+  outline: none;
+  border: none;
 }
