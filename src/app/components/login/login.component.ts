@@ -48,6 +48,6 @@ export class LoginComponent {
   }
 
   open(loginModel: any) {
-    this.modalService.open(loginModel);
+    this.modalService.open(loginModel, { centered: true });
   }
 }
