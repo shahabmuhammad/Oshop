@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-light mb-4">
+<nav class="navbar navbar-expand-md mb-4">
   <div class="container">
     <a class="navbar-brand" routerLink="/">OSHOP</a>
     <button
@@ -20,8 +20,12 @@
     >
       <ul class="navbar-nav mb-2 mb-md-0">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/shopping-cart">Shopping Cart <span class="badge rounded-pill bg-success">{{ ShoppingCartItem }}</span>
-</a>
+          <a class="nav-link" routerLink="/shopping-cart"
+            >Shopping Cart
+            <span class="badge rounded-pill bg-success">{{
+              ShoppingCartItem
+            }}</span>
+          </a>
         </li>
         <ng-template #anonymousUser>
           <li class="nav-item">
@@ -77,5 +81,3 @@
     </div>
   </div>
 </nav>
-
-
