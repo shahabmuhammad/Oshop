@@ -2,7 +2,19 @@ a:hover {
   transition: all .3s ease-in-out;
 }
 .login-btn {
-  color: rgb(163, 218, 163);
+  color: #fff;
+}
+.login-btn:active {
+  outline: none;
+  border: none;
+}
+.login-btn:visited {
+  outline: none;
+  border: none;
+}
+.login-btn:focus {
+  outline: none;
+  border: none;
 }
 .modal-header{
   padding: 1.75rem 2.5rem 1.75rem 1.75rem;
