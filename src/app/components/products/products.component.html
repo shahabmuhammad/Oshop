@@ -1,16 +1,21 @@
 <div class="container">
- <div class="row">
-     <div class="col-md-2">
-         <product-filter [category]="category" ></product-filter>
-     </div>
-     <div class="col-md-10">
-            <div class="row row-cols-auto">
-                <div *ngFor="let p of filterProducts" class="col-md-4">
-                    <div class="col-md-6">
-                        <product-card [product]="p" [shopping-cart]="cart" [showBtn]="true" [cardWidth]="cardWidth"></product-card>
-                    </div>
-                </div>
-            </div>
-     </div>
- </div>
+  <div class="row">
+    <div class="col-md-2">
+      <product-filter [category]="category"></product-filter>
+    </div>
+    <div class="col-md-10">
+      <div class="row row-cols-auto">
+        <div *ngFor="let p of filterProducts" class="col-md-4">
+          <div class="">
+            <product-card
+              [product]="p"
+              [shopping-cart]="cart"
+              [showBtn]="true"
+              [cardWidth]="cardWidth"
+            ></product-card>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
